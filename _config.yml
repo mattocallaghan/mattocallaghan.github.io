@@ -14,7 +14,7 @@ name                     : &name "Matthew O'Callaghan"
 description              : &description "Final Year PhD Student at the University of Cambridge. Researching the Interstellar Medium and Probabilistic Machine Learning Methods."
 url                      : Matthew's Homepage # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "mattocallaghan/mattocallaghan.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Matthew O'Callaghan"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Final Year PhD Student at the University of Cambridge. Researching the Interstellar Medium and Probabilistic Machine Learning Methods."
   location         : "Cambridge, UK"
-  employer         : "Institue of Astronomy, University of Cambridge"
+  employer         : "University of Cambridge"
   uri              : # URL
   email            : "mo503@cam.ac.uk" 
 
@@ -44,12 +44,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "mattocallaghan"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : #"bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
