@@ -1,14 +1,14 @@
 ---
-title: "Paper Title Number 1"
+title: "Quantifying interstellar extinction at high Galactic latitudes"
 collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+excerpt: 'A detailed map of the distribution of dust at high Galactic latitudes is essential for future cosmic microwave background polarization experiments because the dust, while diffuse, remains a significant foreground in these regions. We develop a Bayesian model to identify a region of the Hertzsprung–Russell (HR) diagram suited to constrain the single-star extinction accurately at high Galactic latitudes.'
+date: 2024-12-04
+venue: 'MNRAS'
+slidesurl: #'https://academic.oup.com/mnras/article/535/3/2149/7831690'
+paperurl: 'https://academic.oup.com/mnras/article/535/3/2149/7831690'
+citation: "O'Callaghan, M. et al. (2009). &quot;Paper Title Number 1.&quot; <i>MNRAS</i>."
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+A detailed map of the distribution of dust at high Galactic latitudes is essential for future cosmic microwave background polarization experiments because the dust, while diffuse, remains a significant foreground in these regions. We develop a Bayesian model to identify a region of the Hertzsprung–Russell (HR) diagram suited to constrain the single-star extinction accurately at high Galactic latitudes. Using photometry from Gaia, 2MASS (Two Micron All-Sky Survey), and AllWISE, and parallax from Gaia, we employ nested sampling to fit the model to the data and analyse the posterior over stellar parameters for both synthetic and real data. Charting low variations in extinction is complex due to systematic errors and degeneracies between extinction and other stellar parameters. The systematic errors can be minimized by restricting our data to a region of the HR diagram where the stellar models are most accurate. Moreover, the degeneracies can be reduced by including astrophysical priors and spectroscopic constraints. We show that accounting for the measurement error of the data and the assumed inaccuracies of the stellar models are critical in accurately recovering small variations in extinction. We compare the posterior distribution for individual stars with spectroscopic stellar parameter estimates from the LAMOST (Large Sky Area Multi-Object Fiber Spectroscopic Telescope) and Gaia ESO and illustrate the importance of estimating extinction and effective temperature as a joint solution.
