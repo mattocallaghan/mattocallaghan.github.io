@@ -12,7 +12,7 @@ title                    : "Matthew O'Callaghan"
 title_separator          : "-"
 name                     : &name "Matthew O'Callaghan"
 description              : &description "Final Year PhD Student at the University of Cambridge. Researching the Interstellar Medium and Probabilistic Machine Learning Methods."
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : Matthew's Homepage # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_picture.jpg"
+  avatar           : "profile.png"
   name             : "Matthew O'Callaghan"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
