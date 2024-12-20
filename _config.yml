@@ -21,14 +21,14 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "profile_picture.jpg"
+  name             : "Matthew O'Callaghan"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Cambridge, UK"
+  employer         : "Institue of Astronomy, University of Cambridge"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "mo503@cam.ac.uk" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
