@@ -21,7 +21,7 @@ repository               : "mattocallaghan/mattocallaghan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.png"
+  avatar           : "profile.png"
   name             : "Matthew O'Callaghan"
   pronouns         : # example: "she/her"  
   bio              : "Final Year PhD Student at the University of Cambridge. Researching the Interstellar Medium and Probabilistic Machine Learning Methods."
