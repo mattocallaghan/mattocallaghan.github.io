@@ -9,15 +9,19 @@ redirect_from:
 
 # About Me
 
-Hello! I'm Matthew, a fourth year PhD student at the University of Cambridge, where I am working with Gerry Gilmore and Kaisey Mandel at the Institute of Astronomy. My research focuses on the dusty interstellar medium (ISM) at high Galactic latitudes for understanding dust geometry within the context of CMB polarization surveys. I am also interested in robust simulation-based inference (SBI), which is an active area of machine learning that provides methods for inferring posterior distributions in an amortized manner while ensuring the posterior is not overconfident, which can lead to incorrect scientific conclusions. The main astronomy application of robust SBI that I look into is the robust recovery of stellar parameter posteriors using stellar evolution models and synthetic spectra.
+Hello! I'm Matthew, a fourth year PhD student at the University of Cambridge, where I am working with Gerry Gilmore and Kaisey Mandel at the Institute of Astronomy. 
+
+My research focuses on the dusty interstellar medium at high Galactic latitudes for understanding dust geometry within the context of CMB polarization surveys. I also work on developing robust simulation-based inference methods.
+
+
 
 
 ## Current Research
 
-### Astronomy.
+### Astronomy
 ##### Data driven reddenings using probabilistic machine learning:
 I am using Gaia distances and photometric surveys to develop a neural conditional density estimator of the photometric colors of negligible-extinction stars conditional on the Galactic cylindrical coordinates and absolute magntiude. This approach learns a prior distribution of intrinsic photometric colours as a probabilistic surfance instead of the regularly adopted functional fit of the colour-colour relations. This aids towards percise and accurate extinction posteriors at high Galactic latitudes  when I marginalize over the prior. Future work will build on these priors to generate small-scale dust maps in regions of the Galaxy where dust is diffuse. 
-##### SBI with BPRP Spectra:
+##### SBI with BPRP Spectra
 SBI methods aims to embed high dimensional data into a lower dimensional sufficient statistic surface. I am looking at using the methods developed in my theoretical SBI work to aim for robust and reliable stellar parameter posteriors using Gaia BPRP Spectra.
 ### Robust Simulation-Based Inference: Bridging the Gap Between Simulation and Observation
 Recent advances in neural density estimation have enabled powerful simulation-based inference (SBI) methods that can flexibly approximate Bayesian inference for intractable stochastic models. Although these methods have demonstrated accurate posterior estimation when the simulator accurately represents the underlying data generative process (DGP), they have been shown to perform poorly in the presence of model misspecification. My work focuses on bridging the gap between simulation and observation in likelihood-based methods, assuming that the simulator outputs can be embedded into a lower-dimensional summary statistic surface.
