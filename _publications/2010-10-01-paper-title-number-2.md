@@ -3,9 +3,9 @@ title: "Symplectic Reduction and Poisson Geometry"
 collection: publications
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+excerpt: 'I derive the coadjoint orbits of the Bianchi Lie groups and define Hamiltonian dynamics on the corresponding cosmologies.'
 date: 2021-06-01
-venue: 'Journal 1'
+venue: 'Penn State Archive'
 slidesurl: #'https://academic.oup.com/mnras/article/535/3/2149/7831690'
 paperurl: 'https://philsci-archive.pitt.edu/19515/1/Symplectic_Reduction_and_Poisson_Geometry_of_Three_Dimensional_Lie_Groups%20%2814%29.pdf'
 citation: "O'Callaghan, M. (2021). &quot;Symplectic Reduction and Poisson Geometry.&quot; <i>Preprint Pen Phill</i>."
