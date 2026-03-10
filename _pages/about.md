@@ -11,7 +11,7 @@ redirect_from:
   <img src="{{ '/images/profile.png' | relative_url }}" alt="Matthew O'Callaghan portrait" />
   <div class="profile-summary__content">
     <h2>Matthew O'Callaghan</h2>
-    <p class="profile-affiliation">Postdoctoral Researcher · University of Cambridge</p>
+    <p class="profile-affiliation">Astronomer · Postdoctoral Researcher · University of Cambridge</p>
     <div class="profile-links">
       {% if site.author.googlescholar %}
         <a href="{{ site.author.googlescholar }}" aria-label="Google Scholar">

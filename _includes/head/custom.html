@@ -3,21 +3,11 @@
 <!-- start custom head snippets -->
 
 <link rel="apple-touch-icon" href="{{ base_path }}/apple-touch-icon.png?v=3">
-<link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon-star.svg?v=13">
-<link rel="shortcut icon" href="{{ base_path }}/images/favicon-star-32.png?v=13">
+<link rel="icon" type="image/x-icon" href="{{ base_path }}/favicon.ico?v=15">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ base_path }}/images/favicon-star-32.png?v=15">
+<link rel="shortcut icon" href="{{ base_path }}/favicon.ico?v=15">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
-
-<script>
-  (function () {
-    // Force tab favicon on each load to avoid stale local favicon cache.
-    var href = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%E2%AD%90%3C/text%3E%3C/svg%3E";
-    var link = document.querySelector("link[rel='icon']") || document.createElement("link");
-    link.setAttribute("rel", "icon");
-    link.setAttribute("href", href);
-    document.head.appendChild(link);
-  })();
-</script>
 
 
 <!-- Support for MatJax -->
