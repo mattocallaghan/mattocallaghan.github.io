@@ -1,43 +1,122 @@
 ---
 permalink: /
-title: "<ins>Personal Homepage</ins>"
-author_profile: true
-redirect_from: 
+title: ""
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-# About Me
+<div class="profile-summary">
+  <img src="{{ '/images/profile.png' | relative_url }}" alt="Matthew O'Callaghan portrait" />
+  <div class="profile-summary__content">
+    <h2>Matthew O'Callaghan</h2>
+    <p class="profile-affiliation">Postdoctoral Researcher · University of Cambridge</p>
+    <div class="profile-links">
+      {% if site.author.googlescholar %}
+        <a href="{{ site.author.googlescholar }}" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar ai-fw" aria-hidden="true"></i> Google Scholar
+        </a>
+      {% endif %}
+      {% if site.author.nasaads %}
+        <a href="{{ site.author.nasaads }}" aria-label="NASA ADS">
+          <i class="fas fa-fw fa-book-open" aria-hidden="true"></i> NASA ADS
+        </a>
+      {% endif %}
+      {% if site.author.arxiv %}
+        <a href="{{ site.author.arxiv }}" aria-label="arXiv">
+          <i class="ai ai-arxiv ai-fw" aria-hidden="true"></i> arXiv
+        </a>
+      {% endif %}
+      {% if site.author.github %}
+        <a href="https://github.com/{{ site.author.github }}" aria-label="GitHub">
+          <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      {% endif %}
+      {% assign linkedin_link = site.author.linkedin_url %}
+      {% if linkedin_link == nil or linkedin_link == "" %}
+        {% if site.author.linkedin %}
+          {% assign linkedin_link = "https://www.linkedin.com/in/" | append: site.author.linkedin | append: "/" %}
+        {% endif %}
+      {% endif %}
+      {% if linkedin_link and linkedin_link != "" %}
+        <a href="{{ linkedin_link }}" aria-label="LinkedIn">
+          <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+        </a>
+      {% endif %}
+      <a href="mailto:mo503@cam.ac.uk" aria-label="email Matthew O'Callaghan">
+        <i class="fas fa-fw fa-envelope" aria-hidden="true"></i> mo503@cam.ac.uk
+      </a>
+    </div>
+  </div>
+</div>
 
-Hello! I'm Matthew, a fourth year PhD student at the University of Cambridge, where I am working with Gerry Gilmore and Kaisey Mandel at the Institute of Astronomy. 
+<div class="research-grid">
+  <article class="research-card">
+    <h3>Dust Mapping and Stellar Parameter Inference</h3>
+    <p>
+      Data-driven extinction and reddening inference from Gaia distances and photometric surveys, with probabilistic
+      modeling of intrinsic colors to recover robust stellar and dust posteriors.
+    </p>
+  </article>
+  <article class="research-card">
+    <h3>Robust Simulation-Based Inference</h3>
+    <p>
+      Methods that remain reliable under simulator misspecification, with careful summary-statistic learning and
+      posterior calibration to bridge simulation and observation.
+    </p>
+  </article>
+  <article class="research-card">
+    <h3>Supernovae Cosmology</h3>
+    <p>
+      Using BayeSN in lensing-aware inference pipelines to constrain cosmological parameters, including <em>H</em><sub>0</sub>,
+      from Type Ia supernova observations.
+    </p>
+  </article>
+</div>
 
-My research focuses on the dusty interstellar medium at high Galactic latitudes for understanding dust geometry within the context of CMB polarization surveys. I also work on developing robust simulation-based inference methods.
-
-
-
-
-## Current Research
-
-### Astronomy
-##### Data driven reddenings using probabilistic machine learning:
-I am using Gaia distances and photometric surveys to develop a neural conditional density estimator of the photometric colors of negligible-extinction stars conditional on the Galactic cylindrical coordinates and absolute magntiude. This approach learns a prior distribution of intrinsic photometric colours as a probabilistic surfance instead of the regularly adopted functional fit of the colour-colour relations. This aids towards percise and accurate extinction posteriors at high Galactic latitudes  when I marginalize over the prior. Future work will build on these priors to generate small-scale dust maps in regions of the Galaxy where dust is diffuse. 
-##### SBI with BPRP Spectra
-SBI methods aims to embed high dimensional data into a lower dimensional sufficient statistic surface. I am looking at using the methods developed in my theoretical SBI work to aim for robust and reliable stellar parameter posteriors using Gaia BPRP Spectra.
-### Robust Simulation-Based Inference: Bridging the Gap Between Simulation and Observation
-Recent advances in neural density estimation have enabled powerful simulation-based inference (SBI) methods that can flexibly approximate Bayesian inference for intractable stochastic models. Although these methods have demonstrated accurate posterior estimation when the simulator accurately represents the underlying data generative process (DGP), they have been shown to perform poorly in the presence of model misspecification. My work focuses on bridging the gap between simulation and observation in likelihood-based methods, assuming that the simulator outputs can be embedded into a lower-dimensional summary statistic surface.
-
-### Ideal Neural Conditional Estimator Architectures for Hamiltonian Monte Carlo
-My work involves constructing normalizing flow architectures that ensure geometric ergodicity of the No U-Turn Sampler (NUTS) Kernel. This is essential for succesfully including a normalizing flow as a prior or likelihood function in a differentiable hierarchical model which uses the NUTS algorithm.
-
-### Earth Atmospheric Physics 
-I also work at the National Obvervatory of Athens where I am building a probabilistic model to understand the optical properties of irregular shaped particles in our atmosphere. This work will significantly speed up the calculation of complex properties of irregularly shaped particles.
-
-## Past Research
-
-### Astronomy
-I have explored the information available at high Galactic latitudes for inferring extinction, contributing to a better understanding of the interstellar medium and its properties. [My first paper](https://academic.oup.com/mnras/article/535/3/2149/7831690) showed that degeneracies between extinction and other stellar parameters are particularly difficult to overcome in these regions and will have a particular impact on CMB experiments. We also showed that using models of stellar evolution for a zero-extinction sample of stars contains systematics which are very problematic for inferring low variation in extinction. Moreover, inferring extinction in these regions is prior dominated and accounting for the systematics in correctly matching priors introduces a systematic in the extinction calculations which is difficult to overcome. We are solving this problem by working entirely from a data-driven perspective.
-
-### Symplectic Geometry
-In 2020-2021 I completed the Part III masters in Mathematics at the University of Cambridge. I was awarded a distinction for my paper [Symplectic Reduciton and Poisson Geometry](http://philsci-archive.pitt.edu/19515/1/Symplectic_Reduction_and_Poisson_Geometry_of_Three_Dimensional_Lie_Groups%20(14).pdf), which provided a background on the topic and proceeded to look at the coadjoint orbits of the Bianchi Lie group and derived the Hamiltonian dynamics for the corresponding cosmologies.
-
-Feel free to reach out if you are interested in my work or have any questions!
+<section class="timeline-block">
+  <h3>Timeline</h3>
+  <ul class="timeline-list">
+    <li>
+      <span class="timeline-year">Sep 2026</span>
+      <p>I have accepted an offer to work at the Centre for Astrophysics | Harvard & Smithsonian with Catherine Zucker, where I will be looking at stellar paramter and dust inference for Nasa's Nancy Grace Roman Space Telescope.</p>
+    </li>
+    <li>
+      <span class="timeline-year">Feb 2026</span>
+      <p>I have started a postoctoral position at the University of Cambridge working with Kaisey Mandel on infererence for supernovae cosmology.</p>
+    </li>
+    <li>
+      <span class="timeline-year">Nov 2025</span>
+      <p>I succesfully defended my thesis at the University of Cambridge!</p>
+    </li>
+    <li>
+      <span class="timeline-year">Nov 2025</span>
+      <p>My paper "Data Driven Dust Inference at High Galactic Latitudes using Probabalistic Machine Learning" was accepted for publication at MNRAS.</p>
+    </li>
+    <li>
+      <span class="timeline-year">Dec 2024</span>
+      <p>My paper "Quantifying Extinction at High Galactic Latitudes" has been accepted for publication in MNRAS.</p>
+    </li>
+    <li>
+      <span class="timeline-year">Mar 2024</span>
+      <p>I have started a six-month research assistant position at the National Observatory in Athens, working on inference for atmospheric dust particles.</p>
+    </li>
+    <li>
+      <span class="timeline-year">Mar 2022</span>
+      <p>I have been awarded the Loyds Exhebition Prize and Gold Medal from Trinity College Dublin.</p>
+    </li>
+    <li>
+      <span class="timeline-year">Oct 2021</span>
+      <p>I have started my PhD in Astronomy and Data Intensive Sciences as a Gianna Angelopoulous Science and Innovation Scholar at the University of Cambridge, where I will be working with Gerry Gilmore and Kaisey Mandel.</p>
+    </li>
+    <li>
+      <span class="timeline-year">Jul 2021</span>
+      <p>I have graduated from the Part III MASt in Mathematics at the University of Cambridge.</p>
+    </li>
+    <li>
+      <span class="timeline-year">Nov 2020</span>
+      <p>Graduated with B.A. in Mathematics from Trinity College Dublin.</p>
+    </li>
+  </ul>
+</section>

@@ -2,13 +2,42 @@
 layout: archive
 title: "Current Work"
 permalink: /portfolio/
-author_profile: true
+author_profile: false
 ---
 
 {% include base_path %}
 
+<div class="work-detail-grid">
+  <article class="work-detail-card">
+    <h3>Dust Mapping and Stellar Parameter Inference</h3>
+    <p>
+      I build probabilistic, data-driven models of intrinsic stellar colors and combine them with Gaia distances and
+      multi-band photometric surveys to infer extinction and stellar parameters in diffuse, high-latitude regions.
+      The focus is calibrated uncertainty and robust behavior where classical assumptions can fail.
+    </p>
+  </article>
+  <article class="work-detail-card">
+    <h3>Robust Simulation-Based Inference</h3>
+    <p>
+      I develop SBI workflows that remain stable under model misspecification by learning informative summary
+      statistics, checking posterior calibration, and explicitly tracking simulator-observation mismatch. The goal is
+      reliable uncertainty quantification for scientific decision-making.
+    </p>
+  </article>
+  <article class="work-detail-card">
+    <h3>Supernovae Cosmology with BayeSN</h3>
+    <p>
+      I am interested in combining BayeSN with lensing-aware inference to constrain cosmological parameters, including
+      <em>H</em><sub>0</sub>, from Type Ia supernovae. This line of work connects principled generative modeling with
+      precision cosmology.
+    </p>
+  </article>
+</div>
+
+{% if site.portfolio and site.portfolio.size > 0 %}
+<hr />
+{% endif %}
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
 {% endfor %}
-
