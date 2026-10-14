@@ -11,6 +11,7 @@ main:
   - title: "Talks"
     url: /talks/
 
-  - title: "CV"
-    url: /files/cv.pdf
+  # CV temporarily hidden while it is being updated
+  # - title: "CV"
+  #   url: /files/cv.pdf
     

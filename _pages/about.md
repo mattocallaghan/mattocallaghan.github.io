@@ -11,7 +11,7 @@ redirect_from:
   <img src="{{ '/images/profile.png' | relative_url }}" alt="Matthew O'Callaghan portrait" />
   <div class="profile-summary__content">
     <h2>Matthew O'Callaghan</h2>
-    <p class="profile-affiliation">Astronomer · Postdoctoral Researcher · University of Cambridge</p>
+    <p class="profile-affiliation">Postdoctoral Astrophysicist · Center for Astrophysics | Harvard &amp; Smithsonian</p>
     <div class="profile-links">
       {% if site.author.googlescholar %}
         <a href="{{ site.author.googlescholar }}" aria-label="Google Scholar">
@@ -44,8 +44,8 @@ redirect_from:
           <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
         </a>
       {% endif %}
-      <a href="mailto:mo503@cam.ac.uk" aria-label="email Matthew O'Callaghan">
-        <i class="fas fa-fw fa-envelope" aria-hidden="true"></i> mo503@cam.ac.uk
+      <a href="mailto:matthew.ocallaghan@cfa.harvard.edu" aria-label="email Matthew O'Callaghan">
+        <i class="fas fa-fw fa-envelope" aria-hidden="true"></i> matthew.ocallaghan@cfa.harvard.edu
       </a>
     </div>
   </div>
@@ -53,17 +53,18 @@ redirect_from:
 
 <div class="research-grid">
   <article class="research-card">
+    <h3>Misspecification-Robust Simulation-Based Inference</h3>
+    <p>
+      Developing simulation-based inference methods that stay reliable when simulators do not perfectly describe the data,
+      using learnt error models to deliver calibrated, amortised posteriors at the scale of large surveys such as
+      NASA's Nancy Grace Roman Space Telescope, where I am building foundational stellar and dust products.
+    </p>
+  </article>
+  <article class="research-card">
     <h3>Dust Mapping and Stellar Parameter Inference</h3>
     <p>
       Data-driven extinction and reddening inference from Gaia distances and photometric surveys, with probabilistic
       modeling of intrinsic colors to recover robust stellar and dust posteriors.
-    </p>
-  </article>
-  <article class="research-card">
-    <h3>Robust Simulation-Based Inference</h3>
-    <p>
-      Methods that remain reliable under simulator misspecification, with careful summary-statistic learning and
-      posterior calibration to bridge simulation and observation.
     </p>
   </article>
   <article class="research-card">
@@ -80,19 +81,23 @@ redirect_from:
   <ul class="timeline-list">
     <li>
       <span class="timeline-year">Sep 2026</span>
-      <p>I have accepted an offer to work at the Centre for Astrophysics | Harvard & Smithsonian with Catherine Zucker, where I will be looking at stellar paramter and dust inference for Nasa's Nancy Grace Roman Space Telescope.</p>
+      <p>My paper "Robust Amortised Simulation-Based Inference via Learnt Error Models" was accepted at NeurIPS 2026!</p>
+    </li>
+    <li>
+      <span class="timeline-year">Sep 2026</span>
+      <p>I have accepted an offer to work at the Centre for Astrophysics | Harvard & Smithsonian with Catherine Zucker, where I will be looking at stellar parameter and dust inference for NASA's Nancy Grace Roman Space Telescope.</p>
     </li>
     <li>
       <span class="timeline-year">Feb 2026</span>
-      <p>I have started a postoctoral position at the University of Cambridge working with Kaisey Mandel on infererence for supernovae cosmology.</p>
+      <p>I have started a postdoctoral position at the University of Cambridge working with Kaisey Mandel on inference for supernovae cosmology.</p>
     </li>
     <li>
       <span class="timeline-year">Nov 2025</span>
-      <p>I succesfully defended my thesis at the University of Cambridge!</p>
+      <p>I successfully defended my thesis at the University of Cambridge!</p>
     </li>
     <li>
       <span class="timeline-year">Nov 2025</span>
-      <p>My paper "Data Driven Dust Inference at High Galactic Latitudes using Probabalistic Machine Learning" was accepted for publication at MNRAS.</p>
+      <p>My paper "Data Driven Dust Inference at High Galactic Latitudes using Probabilistic Machine Learning" was accepted for publication at MNRAS.</p>
     </li>
     <li>
       <span class="timeline-year">Dec 2024</span>
@@ -104,11 +109,11 @@ redirect_from:
     </li>
     <li>
       <span class="timeline-year">Mar 2022</span>
-      <p>I have been awarded the Loyds Exhebition Prize and Gold Medal from Trinity College Dublin.</p>
+      <p>I have been awarded the Lloyd Exhibition Prize and Gold Medal from Trinity College Dublin.</p>
     </li>
     <li>
       <span class="timeline-year">Oct 2021</span>
-      <p>I have started my PhD in Astronomy and Data Intensive Sciences as a Gianna Angelopoulous Science and Innovation Scholar at the University of Cambridge, where I will be working with Gerry Gilmore and Kaisey Mandel.</p>
+      <p>I have started my PhD in Astronomy and Data Intensive Sciences as a Gianna Angelopoulos Science and Innovation Scholar at the University of Cambridge, where I will be working with Gerry Gilmore and Kaisey Mandel.</p>
     </li>
     <li>
       <span class="timeline-year">Jul 2021</span>
